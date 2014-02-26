@@ -1,5 +1,7 @@
+CC := $(CROSS_COMPILE)gcc
+
 hello: hello.c
-	gcc -o hello hello.c -I.
+	$(CC) -o hello hello.c
 
 clean:
 	rm -f hello hello.o
